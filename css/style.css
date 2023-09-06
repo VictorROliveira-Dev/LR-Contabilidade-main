@@ -159,11 +159,19 @@ main {
 @media (max-width: 999px) {
   .banner {
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    padding: 80px auto 80px auto;
+    padding-left: 30px;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+  }
+
+  .main-header img {
+    display: none;
+  }
+
+  .menu .action-link {
+    font-size: 24px;
   }
 
   .banner .main-title::after {
@@ -176,8 +184,10 @@ main {
     transform: translateY(20px);
   }
 
-  .slogan {
+  .banner .slogan {
     padding-bottom: 80px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .slogan .title {
